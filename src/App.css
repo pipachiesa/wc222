@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+:root {
+  background-color: rgb(243 244 246);
+}
+
+.menu {
+  color: rgb(243 244 246);
+}
+
+.btn-ghost {
+  color: rgb(243 244 246);
+}
