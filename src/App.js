@@ -1,16 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar';
-import CountDown from './components/CountDown';
-
-const styles = {
-  backgroundColor: 'blue'
-}
+import CartWidget from './components/CartWidget';
 
 function App() {
   return (
     <div className="App">
-      <NavBar></NavBar>
+      <NavBar>
+        <CartWidget></CartWidget>
+      </NavBar>
       
     </div>
   );

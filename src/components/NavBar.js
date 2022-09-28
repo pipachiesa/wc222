@@ -1,4 +1,6 @@
 import React from 'react'
+import CartWidget from './CartWidget'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function NavBar() {
     return (
@@ -20,6 +22,9 @@ function NavBar() {
             </ul>
         </li>
         <li><a>CONTACT US</a></li>
+        <li>
+            <CartWidget></CartWidget>
+        </li>
         </ul>
     </div>
     </div>
