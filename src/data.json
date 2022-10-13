@@ -1,0 +1,12 @@
+[
+    {"id": 1, "name": "Japan Home Kit", "price": 90, "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d29e68cd5763467aa2c5aeb6010f42a3_9366/Japan_22_Home_Jersey_Blue_HF1845_22_model.jpg", "description": "Adidas Japan Home Kit"
+},
+    {"id": 2, "name": "Argentina Home Kit", "price": 90, "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/3399565c29274bc084c8ae830109ebab_9366/Argentina_22_Home_Jersey_White_HF2158_22_model.jpg", "description": "Adidas Argentina Home Kit"
+},
+    {"id": 3, "name": "Mexico Home Kit", "price": 90, "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8981f0e78cf6472d8937aebb010cfef3_9366/Mexico_22_Home_Jersey_Green_HD6899_22_model.jpg", "description": "Adidas Mexico Home Kit"
+}, 
+    {"id": 4, "name": "Germany Home Kit", "price": 90, "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8b5f0d2f2cdf4499aaf0aeec00914506_9366/Germany_22_Home_Jersey_White_HJ9606_22_model.jpg", "description": "Adidas Germany Home Kit"
+},
+    {"id": 5, "name": "Belgium Home Kit", "price": 90, "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/9f63b43565544975bb1bae99012ddfdd_9366/Belgium_22_Home_Jersey_Red_HD9412_22_model.jpg", "description": "Adidas Belgium Home Kit"
+}
+]

@@ -1,10 +1,12 @@
 import React from 'react';
-
+import {FaShoppingCart} from 'react-icons/fa';
 const CartWidget = () => {
 
 return (
     <div>
-    <a href="#my-modal-2" className="btn bg-rose-800">SHOPPING CART</a>
+    <a href="#my-modal-2" className="bg-rose-800">
+        <FaShoppingCart/>
+    </a>
 
     <div className="modal" id="my-modal-2">
     <div className="modal-box bg-rose-800">

@@ -1,30 +1,22 @@
 import React from 'react'
 import CartWidget from './CartWidget'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Link } from 'react-router-dom'
+import '../App.css'
 
 function NavBar() {
     return (
 <div className="navbar bg-rose-800">
     <div className="flex-1">
-        <a className="btn btn-ghost normal-case text-xl">WC22</a>
+        <Link to='/Home' className="btn btn-ghost normal-case text-xl">
+            <img className='wclogo' src='https://static.wixstatic.com/media/bbe01b_c4b47521203846faa70386699da89057~mv2.png/v1/crop/x_0,y_0,w_898,h_790/fill/w_480,h_420,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/FIFA%20World%20Cup%20Qatar%202022%20Logo%20(PNG-1080p)%20-%20FileVector69.png'></img>
+        </Link>
     </div>
     <div className="flex-none">
         <ul className="menu menu-horizontal p-0">
-        <li><a>HOME</a></li>
-        <li tabIndex={0}>
-            <a>
-            SHOP
-            <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
-            </a>
-            <ul className="p-2 bg-rose-800">
-            <li><a>HOME KITS</a></li>
-            <li><a>AWAY KITS</a></li>
-            </ul>
-        </li>
+        <li><Link to={'/Home'}>HOME</Link></li>
+        <li><Link to={'/Shop'}>SHOP</Link></li>
         <li><a>CONTACT US</a></li>
-        <li>
-            <CartWidget></CartWidget>
-        </li>
+        <li><CartWidget/></li>
         </ul>
     </div>
     </div>
