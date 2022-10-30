@@ -5,7 +5,7 @@ const Home = () => {
 return (
     <div>
         <Carousel></Carousel>
-        <a className='btn mt-5'>SHOP NOW</a>
+        <a className='btn'>SHOP NOW</a>
     </div>
 )
 }
