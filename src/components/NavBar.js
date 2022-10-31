@@ -1,7 +1,9 @@
 import React from 'react'
-import CartWidget from './CartWidget'
+import { FaShoppingCart } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import '../App.css'
+import Cart from './Cart'
+import CartWidget from './CartWidget'
 
 function NavBar() {
     return (
@@ -15,7 +17,6 @@ function NavBar() {
         <ul className="menu menu-horizontal p-0">
         <li><Link to={'/Home'}>HOME</Link></li>
         <li><Link to={'/Shop'}>SHOP</Link></li>
-        <li><a>CONTACT US</a></li>
         <li><CartWidget/></li>
         </ul>
     </div>

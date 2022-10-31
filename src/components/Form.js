@@ -1,13 +1,13 @@
 import * as React from 'react';
 import TextField from '@mui/material/TextField';
-import { addDoc, collection } from "firebase/firestore";
-import { db } from '../FirebaseConfig';
+import { addDoc, collection, } from "firebase/firestore";
+import { db } from '../index';
 import { useState } from 'react';
 import moment from 'moment/moment';
-import { UseProductsContext } from '../CartContext/CartContext';
+import { UseProductsContext } from './CartContext';
 import { Link } from 'react-router-dom';
-import MessageId from '../MessageId/MessageId';
-import { validateEmail } from '../../Helpers/Helper';
+import MessageId from './MessageId';
+import { validateEmail } from './Helper';
 
 const initialBuyer = {
 	nombre: '',
@@ -79,14 +79,14 @@ return (
 					onChange={handleOnChange}
 				/>
 				{ buyer.email && !isEmailValid ? <MessageId type={'error'} message={'Invalid Email'} /> : ''}
-				<button onClick={onSubmit} className="int__button my-3 mx-2">ENVIAR</button>
+				<button onClick={onSubmit} className="btn btn-dark btn-color my-3 mx-2">SEND</button>
 			</div> 
 			: 
 			<div>
-				<span className='mx-5 fw-bold'>¡GRACIAS POR SU COMPRA!</span> 
-				{purchaseID && <MessageId type={'success'} message={message} />}
+				<span className='mx-5 font-color'>THANKS FOR BUYING!</span> 
+				{purchaseID && <MessageId type={'success'} className="message" message={message} />}
 				<Link to="/">
-					<div> <button className="int__button my-1 mx-5 mt-3" style={{ lineHeight: '0.3rem' }}>VOLVER AL INICIO</button></div>
+					<div> <button className="btn btn-dark btn-color my-1 mx-5 mt-3" style={{ lineHeight: '0.3rem' }}>GO HOME</button></div>
 				</Link>
 			</div>
 			}

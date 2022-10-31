@@ -50,7 +50,7 @@
 }
 
 .wclogo {
-  width: 70px;
+  width: 62.5px;
 }
 
 .footertext {
@@ -72,4 +72,37 @@
 
 .font-color{
   color: black;
+}
+
+.btn-color {
+  color: white;
+}
+
+.img-detail {
+  width: 25%;
+  margin-left: 36%;
+  margin-top: 10px;
+}
+
+.cart-dec{
+  border: 1px solid #000;
+  margin-top: 10px;
+}
+
+.buy{
+  margin-bottom: 50%px;
+}
+
+.message{
+  margin-left: 50%;
+}
+
+.css-1pbfcuq-MuiStack-root{
+  margin-left: 380px;
+  margin-bottom: 100px;
+}
+
+.shop{
+  display: flex;
+  flex-wrap: wrap;
 }

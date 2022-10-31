@@ -2,7 +2,7 @@ import React from 'react'
 
 const Carousel = () => {
 return (
-<div className="mt-5 carousel w-full">
+<div className="carousel w-full">
 <div id="slide1" className="carousel-item relative w-full">
     <img src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt94c11c2170f85992/630de98ec14ae31b7dbea328/Japan_WC_kits.jpg?format=jpg" className="w-full" />
     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">

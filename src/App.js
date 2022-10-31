@@ -7,6 +7,10 @@ import Footer from './components/Footer';
 import ListContainer from './components/ListContainer';
 import ItemList from './components/ListContainer';
 import ProductsProvider from './components/CartContext';
+import ItemDetail from './components/ItemDetail';
+import ItemDetailContainer from './components/ItemDetailContainer';
+import Cart from './components/Cart'
+import { FaShoppingCart } from 'react-icons/fa';
 
 function App() {
   return (
@@ -17,9 +21,11 @@ function App() {
             <CartWidget></CartWidget>
           </NavBar>
           <Routes>
+            <Route path='/' element={<Home />} />
             <Route path={'/Home'} element={<Home/>}></Route>
             <Route path={'/Shop'} element={<ItemList/>}></Route>
-            <Route path={'/firebase'} element={<ItemList/>}></Route>
+            <Route path={'/itemdetail/:id'} element={<ItemDetailContainer/>}></Route>
+            <Route path='/cart' element={<Cart/>} />
           </Routes>
           <Footer></Footer>
         </BrowserRouter>
